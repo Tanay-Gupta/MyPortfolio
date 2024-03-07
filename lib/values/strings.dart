@@ -4,7 +4,7 @@ class StringConst {
   //strings
   static const String APP_NAME = "Tanay Gupta Portfolio";
   static const String APP_TITLE = "Tanay Gupta Portfolio";
-  static const String SITE_URL = "https://github.com/tanay--gupta";
+  static const String SITE_URL = "https://tanaygupta.tech";
 
   static const String HOME = "Home";
   static const String ABOUT = "About";
