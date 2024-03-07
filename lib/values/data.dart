@@ -294,12 +294,10 @@ class Data {
       roles: [
         StringConst.COMPANY_3_ROLE_1,
         StringConst.COMPANY_3_ROLE_2,
-       
       ],
       location: StringConst.LOCATION_3,
       duration: StringConst.DURATION_3,
     ),
-
     ExperienceData(
       company: StringConst.COMPANY_2,
       position: StringConst.POSITION_2,
@@ -307,12 +305,11 @@ class Data {
       roles: [
         StringConst.COMPANY_2_ROLE_1,
         StringConst.COMPANY_2_ROLE_2,
-        StringConst.COMPANY_2_ROLE_3,
       ],
       location: StringConst.LOCATION_2,
       duration: StringConst.DURATION_2,
     ),
-     ExperienceData(
+    ExperienceData(
       company: StringConst.COMPANY_a1,
       position: StringConst.POSITION_a1,
       companyUrl: StringConst.COMPANY_a1_URL,
@@ -322,6 +319,18 @@ class Data {
       location: StringConst.LOCATION_a1,
       duration: StringConst.DURATION_a1,
     ),
+    ExperienceData(
+      company: StringConst.COMPANY_a2,
+      position: StringConst.POSITION_a2,
+      companyUrl: StringConst.COMPANY_a2_URL,
+      roles: [
+        StringConst.COMPANY_a2_ROLE_1,
+        StringConst.COMPANY_a2_ROLE_2,
+      ],
+      location: StringConst.LOCATION_a2,
+      duration: StringConst.DURATION_a2,
+    ),
+    
     ExperienceData(
       company: StringConst.COMPANY_1,
       position: StringConst.POSITION_1,

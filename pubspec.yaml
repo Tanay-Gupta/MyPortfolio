@@ -112,6 +112,25 @@ flutter:
           weight: 700
         - asset: assets/fonts/visuelt/VisueltPro-Bold.ttf
           weight: 800
+    # - family: FontAwesomeBrands
+    #   fonts:
+    #     - asset: packages/font_awesome_flutter/fonts/FontAwesomeBrands-Regular.ttf
+
+    # - family: FontAwesomeSolid
+    #   fonts:
+    #     - asset: packages/font_awesome_flutter/fonts/FontAwesomeSolid-Regular.ttf
+
+    # - family: MaterialIcons
+    #   fonts:
+    #     - asset: packages/material_design_icons_flutter/fonts/MaterialIcons-Regular.ttf
+
+    # - family: FeatherIcons
+    #   fonts:
+    #     - asset: packages/flutter_feather_icons/fonts/FeatherIcons-Regular.ttf
+
+    # - family: CupertinoIcons
+    #   fonts:
+    #   - asset: packages/cupertino_icons/assets/CupertinoIcons.ttf      
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
