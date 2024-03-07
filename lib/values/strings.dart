@@ -218,8 +218,7 @@ class StringConst {
 
   //-------------------------------------------------------------------Experience-------------------------------
 
-
- //Company 1
+  //Company 1
   static const String COMPANY_1 = "Google Developer Students Club";
   static const String COMPANY_1_URL = SITE_URL;
   static const String POSITION_1 = "Application Development Core Member";
@@ -233,30 +232,37 @@ class StringConst {
       "GL Bajaj Institute of Technology and Management";
   static const String DURATION_1 = "Aug 2021 - Sept 2022";
 
+//Company 1.5_a2
+  static const String COMPANY_a2 = "Rotract Club of GL Bajaj ";
+  static const String COMPANY_a2_URL = SITE_URL;
+  static const String POSITION_a2 = "Community Service Director ";
+  static const String COMPANY_a2_ROLE_1 =
+      "Led Rotaract members in coordinating community service initiatives, fostering impactful collaborations with multiple NGOs. Organized 30+ donation drives to uplift and support underprivileged communities.";
+  static const String COMPANY_a2_ROLE_2 =
+      "Championed the promotion of social awareness and advocated for positive change, leveraging Rotaract's initiatives to make a lasting impact within the community";
+  static const String LOCATION_a2 = "Greater Noida";
+  static const String DURATION_a2 = "July 2023 -January 2024";
+
 //Company 1.5
   static const String COMPANY_a1 = "Persistent Systems";
   static const String COMPANY_a1_URL = SITE_URL;
   static const String POSITION_a1 = "Apprenticeship";
   static const String COMPANY_a1_ROLE_1 =
-      " Skills: Data Structures, Database Management System (DBMS), Java, Linux";
- 
-  static const String LOCATION_a1 =
-      "Remote";
+      "Gained expertise in Linux, Data Structures, Java, and Database Management System (DBMS) during apprenticeship, forming a solid skill set for software development";
+
+  static const String LOCATION_a1 = "Remote";
   static const String DURATION_a1 = "Jun 2023 - Aug 2023";
 
-
- //Company 2
+  //Company 2
   static const String COMPANY_2 = "The Internet Folks";
   static const String COMPANY_2_URL = SITE_URL;
   static const String POSITION_2 = "Software Engineering Intern";
   static const String COMPANY_2_ROLE_1 =
-      " Contributed to two live Flutter applications with a combined user base exceeding 20,000.";
+      "Played a key role in the development of two dynamic Flutter applications, collectively serving a user base exceeding 20,000, demonstrating proficiency in Flutter, GraphQL, SQL, Postman, and Map APIs";
   static const String COMPANY_2_ROLE_2 =
-      " Collaborated effectively with cross-functional teams to introduce innovative features,resulting in increased user engagement and satisfaction";
-  static const String COMPANY_2_ROLE_3 =
-      " Conducted rigorous code reviews, offering valuable feedback to maintain top-notch code quality and efficiency.";
-  static const String LOCATION_2 =
-      "Bhopal";
+      "Collaborated with cross-functional teams to introduce innovative features, enhancing user engagement. Conducted rigorous code reviews, ensuring high-quality, efficient code, and contributing to process improvement.";
+
+  static const String LOCATION_2 = "Bhopal";
   static const String DURATION_2 = "July 2023 - Sept 2023";
 
 //Company 3
@@ -264,15 +270,12 @@ class StringConst {
   static const String COMPANY_3_URL = SITE_URL;
   static const String POSITION_3 = "Associate Software Engineer";
   static const String COMPANY_3_ROLE_1 =
-      "  Gathered requirements, designed architectures, and developed applications using Azure, Power BI, and did data validation using SQL.";
+      "Crafted dynamic websites with HTML, CSS, JavaScript, and React. Implemented advanced GraphQL solutions for efficient data fetching and enhanced system performance";
   static const String COMPANY_3_ROLE_2 =
-      "  Key contributions: Database design, coding, testing, and troubleshooting. Committed to ongoing skill improvement through training and certifications.";
-  
-  static const String LOCATION_3 =
-      "Hyderabad";
+      "Proactively identified and resolved software bugs, contributing to a smooth user experience. Actively engaged in collaborative team meetings.";
+
+  static const String LOCATION_3 = "Hyderabad";
   static const String DURATION_3 = "Sept 2023 - Present";
-
-
 
   //-------------------------------------Portfolio, Projects----------------------
 
