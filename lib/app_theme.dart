@@ -16,10 +16,10 @@ class AppTheme {
     return ThemeData(
       colorScheme: colorScheme,
       textTheme: _textTheme,
-      iconTheme: IconThemeData(color: AppColors.white),
+      iconTheme: const IconThemeData(color: AppColors.white),
       canvasColor: colorScheme.background,
-      appBarTheme: AppBarTheme(
-        color: AppColors.primaryColor,
+      appBarTheme: const AppBarTheme(
+        color:  AppColors.primaryColor,
       ),
       textSelectionTheme: TextSelectionThemeData(
         cursorColor: AppColors.black,
@@ -37,9 +37,9 @@ class AppTheme {
 
   static const ColorScheme lightColorScheme = ColorScheme(
     primary: AppColors.primaryColor,
-    primaryVariant: AppColors.primaryColor,
+    primaryContainer: AppColors.primaryColor,
     secondary: AppColors.secondaryColor,
-    secondaryVariant: AppColors.black,
+    secondaryContainer: AppColors.black,
     background: AppColors.primaryColor,
     surface: AppColors.primaryColor,
     onBackground: Colors.white,

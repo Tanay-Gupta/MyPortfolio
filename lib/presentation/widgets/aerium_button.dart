@@ -96,8 +96,8 @@ class _AeriumButtonState extends State<AeriumButton>
       fontWeight: FontWeight.w400,
     );
     final ButtonStyle defaultButtonStyle = ElevatedButton.styleFrom(
-      primary: widget.onHoverColor,
-      onPrimary: widget.onHoverColor,
+      foregroundColor: widget.onHoverColor,
+      backgroundColor: widget.onHoverColor,
       padding: EdgeInsets.all(0),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(0)),
