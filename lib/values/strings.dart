@@ -2,7 +2,7 @@ part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "Tanay Gupta Portfolio";
+  static const String APP_NAME = "Built by Tanay (Powered by ☕)";
   static const String APP_TITLE = "Tanay Gupta Portfolio";
   static const String SITE_URL = "https://tanay-gupta.github.io";
 
