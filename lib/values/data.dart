@@ -219,6 +219,7 @@ class Data {
   ];
 
   static List<ProjectItemData> recentWorks = [
+   Projects.ROASTMYRESUME,
     Projects.AILAAN_APP,
     Projects.NOTIFYX,
     Projects.SOCIALAPP,
@@ -228,6 +229,7 @@ class Data {
   ];
 
   static List<ProjectItemData> projects = [
+    Projects.ROASTMYRESUME,
     Projects.AILAAN_APP,
     Projects.NOTIFYX,
     Projects.SOCIALAPP,
@@ -369,6 +371,29 @@ class Data {
 }
 
 class Projects {
+
+  static ProjectItemData ROASTMYRESUME = ProjectItemData(
+  title: StringConst.ROASTMYRESUME,
+  subtitle: StringConst.ROASTMYRESUME_SUBTITLE,
+  platform: StringConst.ROASTMYRESUME_PLATFORM,
+  primaryColor: AppColors.datingcolor, // You can customize this color
+  image: ImagePath.ROASTMYRESUME_COVER,     // Add this to your ImagePath class
+  coverUrl: ImagePath.ROASTMYRESUME_COVER, // Optional, if you have a cover image/screens
+  navSelectedTitleColor: AppColors.datingcolorNavTitle, // Customize as per theme
+  appLogoColor: AppColors.datingcolorNavTitle,
+  projectAssets: [
+    // ImagePath.NOTIFYX_2,
+    //   ImagePath.NOTIFYX_3,
+  ],
+  category: StringConst.ROASTMYRESUME_CATEGORY,
+  portfolioDescription: StringConst.ROASTMYRESUME_DETAIL,
+  isPublic: true,
+  isOnPlayStore: false,
+  technologyUsed: "Python",
+  gitHubUrl: StringConst.ROASTMYRESUME_GITHUB_URL,
+  playStoreUrl: StringConst.ROASTMYRESUME_PLAYSTORE_URL,
+);
+
   static ProjectItemData AILAAN_APP = ProjectItemData(
     title: StringConst.AILAAN_APP,
     subtitle: StringConst.AILAAN_APP,

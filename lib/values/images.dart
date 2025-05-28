@@ -42,6 +42,10 @@ class ImagePath {
   static const String WS_CERT = "$imageDir/ws.png";
   static const String CN8_CERT = "$imageDir/cn8.png";
   // ---------------------------------------------------------Projects-----------------------------------
+//roastmyresume
+  static const String ROASTMYRESUME_COVER = "$projectsDir/roastmyresume/1.png";
+
+
   //Ailaan
   static const String AILAAN_APP_COVER = "$projectsDir/ailaan/7.png";
 

@@ -310,6 +310,20 @@ static const String LOCATION_4 = "Gurugram";
 static const String DURATION_4 = "Sep 2024 - Present";
 
   //-------------------------------------Portfolio, Projects----------------------
+//ROAST MY RESUME
+static const String ROASTMYRESUME = "RoastMyResume";
+static const String ROASTMYRESUME_PLATFORM = "Web.";
+static const String ROASTMYRESUME_CATEGORY = "AI Tool / Resume Critique";
+static const String ROASTMYRESUME_SUBTITLE =
+    "Where Weak Resumes Get Fired Up!";
+static const String ROASTMYRESUME_DETAIL =
+    "RoastMyResume is a witty and innovative web app built using Streamlit, designed to help users transform their dull resumes into interview-ready documents. It leverages the Gemini AI model via dspy to analyze, roast, and provide constructive feedback in a fun and engaging way.\n\n"
+    "Key features include AI-powered resume roasting, intuitive UI, and PDF upload functionality. The app delivers not only humorous critiques but also actionable insights to help users improve their resumes and stand out to employers.\n\n"
+    "With PyPDF2 for handling resume content and Streamlit for a responsive frontend, RoastMyResume is your AI-powered career advisor — with a sense of humor.";
+
+static const String ROASTMYRESUME_PLAYSTORE_URL = "";
+static const String ROASTMYRESUME_GITHUB_URL =
+    "https://roastmyresume.streamlit.app/";
 
 //Ailaan App
   static const String AILAAN_APP = "Ailaan";
