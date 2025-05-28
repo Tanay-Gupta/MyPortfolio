@@ -58,38 +58,53 @@ class StringConst {
       "Something went wrong. Please send me an email manually - ${StringConst.DEV_EMAIL}";
 
   //--------------------------------------------------------------About Page---------------------------------------------------------------------
+  // static const String ABOUT_DEV_CATCH_LINE =
+  //     "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
+  // static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high ";
+  // static const String ABOUT_DEV_CATCH_LINE_2 =
+  //     "quality flutter & django applications.";
+
+  // static const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
+  // static const String ABOUT_DEV_CATCH_LINE_5 =
+  //     "passion for competitive programming.";
   static const String ABOUT_DEV_CATCH_LINE =
-      "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
-  static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high ";
-  static const String ABOUT_DEV_CATCH_LINE_2 =
-      "quality flutter & django applications.";
+    "I'm a passionate full-stack developer who loves turning ideas into real-world products.";
+static const String ABOUT_DEV_CATCH_LINE_1 =
+    "I specialize in building high-quality";
+static const String ABOUT_DEV_CATCH_LINE_2 =
+    "mobile, web, and backend applications using Flutter, React, and scalable backend technologies.";
 
-  static const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
-  static const String ABOUT_DEV_CATCH_LINE_5 =
-      "passion for competitive programming.";
-  static const String ABOUT_DEV_STORY = "Story";
-  static const String ABOUT_DEV_STORY_TITLE = "A little bit about myself.";
-  static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "I am a software development student with a passion for innovation. I am proficient in Java, Python, and C++ and have experience with Application development using Flutter.";
+static const String ABOUT_DEV_CATCH_LINE_4 =
+    "I also have a strong foundation in data structures, algorithms,";
+static const String ABOUT_DEV_CATCH_LINE_5 =
+    "and a passion for CP and System design.";
 
-  static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I am pursuing a Bachelor of Technology degree from G.L Bajaj Institute of Technology and Management where I majored in Computer Science and Engineering. I have strong technical skills as well as excellent interpersonal skills, which has enabled me to work & interact with different clients.";
-  static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "Talking about my hobbies, I enjoy spending my free time listening to music and typing . I find that these hobbies help me to relax and recharge, while also keeping me mentally stimulated and engaged. I am always on the lookout for new and interesting books to read, and I am passionate about discovering new music and exploring different genres.";
+static const String ABOUT_DEV_STORY = "Story";
+static const String ABOUT_DEV_STORY_TITLE = "A little bit about myself.";
+static const String ABOUT_DEV_STORY_CONTENT_1 =
+    "Hey there! I'm Tanay — a full-stack software engineer who enjoys crafting mobile apps, websites, and automation systems that actually get things done. I work with Flutter, React, Go, Java (Spring Boot), Python, and sometimes even magic (just kidding, that’s mostly Git).";
+
+static const String ABOUT_DEV_STORY_CONTENT_2 =
+    "I graduated with a B.Tech in Computer Science (AI specialization) from G.L. Bajaj Institute of Technology and Management. Over time, I've worked with companies like Accenture and MAQ Software, building dashboards, financial tools, and automation systems — all while keeping bugs (mostly) at bay. I’m just as comfortable talking to clients as I am writing backend logic or debugging in production at 2 AM.";
+
+static const String ABOUT_DEV_STORY_CONTENT_3 =
+    "When I'm not coding or pretending to be a terminal wizard, you’ll find me chasing mountains. I recently completed treks to Dayara Bugyal and Kedarkantha — breathtaking views and equally breathtaking lack of oxygen. I also enjoy music, reading, and typing like I’m in a hacker movie. If you’ve got a good playlist or a mountain recommendation — I’m all ears!";
+
+  
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
   static const String MOBILE_TECH = "Programming Languages";
   static const String OTHER_TECH = "Frameworks & Other Technologies";
-  static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
-  static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
-      "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
-  static const String ABOUT_DEV_CODING = "Coding";
+ static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I Use";
+static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
+    "From building slick UIs to wiring up scalable backends, I work with a range of tools that help bring ideas to life. Below are some of the technologies I’ve worked with over the years — and yes, I actually enjoy using most of them.";
+ static const String ABOUT_DEV_CODING = "Coding";
   static const String ABOUT_DEV_CODING_PROFILE = "Coding Profile";
   static const String ABOUT_DEV_CONTACT = "Contact";
   static const String ABOUT_DEV_CONTACT_SOCIAL = "Social.";
   static const String ABOUT_DEV_CONTACT_EMAIL = "Email.";
   static const String FAMOUS_QUOTE =
-      "“You are your own teacher. Investigate yourself to find the truth ― inside, not outside. Knowing yourself is most important.”";
-  static const String FAMOUS_QUOTE_AUTHOR = "Ajahn Chah";
+      "If you enjoyed reading this, imagine what I can build for you — now, where's my coffee?";
+  static const String FAMOUS_QUOTE_AUTHOR = "Your Next Favorite Developer";
   static const String WORK_TOGETHER = "Let's work together.";
   static const String AVAILABLE_FOR_FREELANCE =
       "Open to Freelance Projects & Full-Time Opportunities";

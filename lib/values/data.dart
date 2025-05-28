@@ -135,21 +135,30 @@ class Data {
   static List<String> mobileTechnologies = [
     "Java",
     "Python",
-    "C",
     "Dart",
+    "JavaScript",
+    "C++",
+    "SQL",
+    "Golang"
   ];
-  static List<String> programmingLanguages = [];
+  // static List<String> programmingLanguages = ["Java", "Python", "C++", "Dart"];
 
   static List<String> otherTechnologies = [
     "Flutter",
-    "Django",
-    "Linux",
-    "Git",
-    "GitHub",
-    "SQL",
-    "C++",
-    "Firebase",
-    "Figma",
+    "React.js",
+    "Spring Boot",
+    "GraphQL",
+    "MongoDB",
+    "Redis",
+    "Flask",
+    "Retool",
+    "HTML",
+    "CSS",
+    "TensorFlow", // AI/ML framework
+    "PyTorch", // AI/ML framework
+    "scikit-learn", // Machine learning library
+    "Pandas", // Data manipulation library
+    "NumPy" // Numerical computing library
   ];
   static List<SocialData> socialData1 = [
     SocialData(
@@ -287,7 +296,6 @@ class Data {
   ];
 
   static List<ExperienceData> experienceData = [
-
     ExperienceData(
       company: StringConst.COMPANY_4,
       position: StringConst.POSITION_4,
@@ -345,7 +353,6 @@ class Data {
       location: StringConst.LOCATION_a2,
       duration: StringConst.DURATION_a2,
     ),
-    
     ExperienceData(
       company: StringConst.COMPANY_1,
       position: StringConst.POSITION_1,
