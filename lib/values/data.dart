@@ -97,10 +97,10 @@ class Data {
       name: StringConst.EXPERIENCE,
       route: StringConst.EXPERIENCE_PAGE,
     ),
-    NavItemData(
-      name: StringConst.CERTIFICATIONS,
-      route: StringConst.CERTIFICATION_PAGE,
-    ),
+    // NavItemData(
+    //   name: StringConst.CERTIFICATIONS,
+    //   route: StringConst.CERTIFICATION_PAGE,
+    // ),
     NavItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
   ];
 
