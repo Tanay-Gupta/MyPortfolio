@@ -4,7 +4,7 @@ class StringConst {
   //strings
   static const String APP_NAME = "Tanay Gupta Portfolio";
   static const String APP_TITLE = "Tanay Gupta Portfolio";
-  static const String SITE_URL = "https://tanaygupta.tech";
+  static const String SITE_URL = "https://tanay-gupta.github.io";
 
   static const String HOME = "Home";
   static const String ABOUT = "About";
@@ -24,7 +24,7 @@ class StringConst {
   static const String DEV_INTRO = "I'm Tanay.";
   static const String DEV_TITLE = "Software Engineer.";
   static const String DEV_DESC =
-      "Flutter Developer / Knight at Leetcode / Django Developer";
+      "Full-Stack Developer | Mobile Apps, Websites & Web Apps • Automation • Product Development";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -47,7 +47,7 @@ class StringConst {
   static const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   static const String SEND_MESSAGE = "Send Message";
-  static const String COPYRIGHT = "©  2023  Built by  $DEV_NAME,";
+  static const String COPYRIGHT = "© 2025  Built by  $DEV_NAME,";
   static const String DESIGNED_BY = "Designed by Julius G.";
   static const String DESIGN_LINK =
       "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
@@ -92,7 +92,7 @@ class StringConst {
   static const String FAMOUS_QUOTE_AUTHOR = "Ajahn Chah";
   static const String WORK_TOGETHER = "Let's work together.";
   static const String AVAILABLE_FOR_FREELANCE =
-      "I'm available for Internship & Freelancing.";
+      "Open to Freelance Projects & Full-Time Opportunities";
   static const String SAY_HELLO = "Say Hello";
 
   //------------------------------------------------------- Works Page-----------------------------------------------
@@ -258,9 +258,9 @@ class StringConst {
   static const String COMPANY_2_URL = SITE_URL;
   static const String POSITION_2 = "Software Engineering Intern";
   static const String COMPANY_2_ROLE_1 =
-      "Played a key role in the development of two dynamic Flutter applications, collectively serving a user base exceeding 20,000, demonstrating proficiency in Flutter, GraphQL, SQL, Postman, and Map APIs";
+      "Developed and improved a mobile app using Flutter, GraphQL, and Firebase, enabling ride tracking and reward redemption, leading to a 10K+ user base on the Play Store.";
   static const String COMPANY_2_ROLE_2 =
-      "Collaborated with cross-functional teams to introduce innovative features, enhancing user engagement. Conducted rigorous code reviews, ensuring high-quality, efficient code, and contributing to process improvement.";
+      "Built a React.js-based Admin Dashboard, automating user management, reward distribution, and ride analytics, reducing manual overhead and improving platform efficiency";
 
   static const String LOCATION_2 = "Bhopal";
   static const String DURATION_2 = "July 2023 - Sept 2023";
@@ -270,12 +270,29 @@ class StringConst {
   static const String COMPANY_3_URL = SITE_URL;
   static const String POSITION_3 = "Associate Software Engineer";
   static const String COMPANY_3_ROLE_1 =
-      "Crafted dynamic websites with HTML, CSS, JavaScript, and React. Implemented advanced GraphQL solutions for efficient data fetching and enhanced system performance";
+      "Built and maintained client-facing websites using React.js, HTML, and CSS, ensuring responsive design and optimal user experience.";
   static const String COMPANY_3_ROLE_2 =
-      "Proactively identified and resolved software bugs, contributing to a smooth user experience. Actively engaged in collaborative team meetings.";
+      "Integrated business financial reports by using Python and SQL, streamlining data visualization and reporting for stakeholders";
+  static const String COMPANY_3_ROLE_3 ="Worked with teams to develop web solutions and improve performance.";
 
   static const String LOCATION_3 = "Hyderabad";
-  static const String DURATION_3 = "Sept 2023 - Present";
+  static const String DURATION_3 = "Sept 2023 - July 2024";
+
+//company 4
+static const String COMPANY_4 = "Accenture";
+static const String COMPANY_4_URL = SITE_URL;
+static const String POSITION_4 = "Associate Software Engineer";
+static const String COMPANY_4_ROLE_1 =
+    "Developed an admin dashboard using React.js and Retool to manage and display business data.";
+static const String COMPANY_4_ROLE_2 =
+    "Built email automation using Go and Java (Spring Boot) to generate, send, and track automated emails.";
+static const String COMPANY_4_ROLE_3 =
+    "Built scalable REST APIs and microservices to support key product features, enhancing backend reliability and data accessibility.";
+static const String COMPANY_4_ROLE_4 =
+    "Contributed to full software development lifecycle including planning, development, testing, and deployment, ensuring timely and quality delivery of enterprise solutions.";
+
+static const String LOCATION_4 = "Gurugram";
+static const String DURATION_4 = "Sep 2024 - Present";
 
   //-------------------------------------Portfolio, Projects----------------------
 
@@ -373,6 +390,6 @@ class StringConst {
   static const String VISUELT_PRO = "VisueltPro";
 
   //API
-  static const String BASE_URL = "https://portfolio-api-liart.vercel.app/api";
+  static const String BASE_URL = "";
   static const String GET_IN_TOUCH_POINT = "/getintouch";
 }

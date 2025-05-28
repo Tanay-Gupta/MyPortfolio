@@ -28,6 +28,7 @@ class _ExperiencePageState extends State<ExperiencePage>
   late AnimationController _experience3Controller;
   late AnimationController _experience4Controller;
   late AnimationController _experience5Controller;
+  late AnimationController _experience6Controller;
   late List<AnimationController> _experienceControllers;
 
   @override
@@ -56,12 +57,17 @@ class _ExperiencePageState extends State<ExperiencePage>
       duration: const Duration(milliseconds: 1200),
       vsync: this,
     );
+    _experience6Controller = AnimationController(
+      duration: const Duration(milliseconds: 1200),
+      vsync: this,
+    );
     _experienceControllers = [
       _experience1Controller,
       _experience2Controller,
       _experience3Controller,
       _experience4Controller,
       _experience5Controller,
+      _experience6Controller,
     ];
     super.initState();
   }
@@ -74,6 +80,7 @@ class _ExperiencePageState extends State<ExperiencePage>
     _experience3Controller.dispose();
     _experience4Controller.dispose();
     _experience5Controller.dispose();
+    _experience6Controller.dispose();
     super.dispose();
   }
 
