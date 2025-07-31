@@ -325,10 +325,22 @@ static const String ROASTMYRESUME_PLAYSTORE_URL = "";
 static const String ROASTMYRESUME_GITHUB_URL =
     "https://roastmyresume.streamlit.app/";
 
+//ContestHunt App
+  static const String CONTESTHUNT_APP = "ContestHunt";
+  static const String CONTESTHUNT_APP_PLATFORM = "Android.";
+  static const String CONTESTHUNT_APP_CATEGORY = "Flutter";
+  static const String CONTESTHUNT_APP_SUBTITLE =
+      "Your one-stop shop for coding news, schedules, and reminders.";
+  static const String CONTESTHUNT_APP_DETAIL =
+      "ContestHunt brings all running and future coding contest, Hackathon and Bounty schedules between your hands from many different Platforms. We believe we can save your time and let you touch the information from different sites, in one app. ContestHunt App can set reminders for the upcoming coding contest so you don't miss any contest. This Application is designed to work in every Time Zone, giving you the correct contest time according to your TimeZone.";
+  static const String CONTESTHUNT_APP_PLAYSTORE_URL =
+      "https://play.google.com/store/apps/details?id=com.miraidyo.contesthunt";
+  static const String CONTESTHUNT_APP_GITHUB_URL = "";
+
 //Ailaan App
   static const String AILAAN_APP = "Ailaan";
   static const String AILAAN_APP_PLATFORM = "Android.";
-  static const String AILAAN_APP_CATEGORY = "Flutter";
+  static const String AILAAN_APP_CATEGORY = "Productivity";
   static const String AILAAN_APP_SUBTITLE =
       "Your one-stop shop for coding contest news, schedules, and reminders.";
   static const String AILAAN_APP_DETAIL =

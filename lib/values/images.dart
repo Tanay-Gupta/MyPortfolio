@@ -45,6 +45,15 @@ class ImagePath {
 //roastmyresume
   static const String ROASTMYRESUME_COVER = "$projectsDir/roastmyresume/1.png";
 
+   //Contest Hunt
+  static const String CONTESTHUNT_APP_COVER = "$projectsDir/contesthunt/1.png";
+
+  static const String CONTESTHUNT_APP_SCREENS = "$projectsDir/contesthunt/1.png";
+  static const String CONTESTHUNT_APP_1 = "$projectsDir/contesthunt/1.png";
+  static const String CONTESTHUNT_APP_2 = "$projectsDir/contesthunt/2.png";
+  static const String CONTESTHUNT_APP_3 = "$projectsDir/contesthunt/3.png";
+  static const String CONTESTHUNT_APP_4 = "$projectsDir/contesthunt/4.png";
+  static const String CONTESTHUNT_APP_5 = "$projectsDir/contesthunt/5.png";
 
   //Ailaan
   static const String AILAAN_APP_COVER = "$projectsDir/ailaan/7.png";

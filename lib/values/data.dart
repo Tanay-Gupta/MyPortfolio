@@ -219,8 +219,9 @@ class Data {
   ];
 
   static List<ProjectItemData> recentWorks = [
+     Projects.CONTESTHUNT_APP,
    Projects.ROASTMYRESUME,
-    Projects.AILAAN_APP,
+    // Projects.AILAAN_APP,
     Projects.NOTIFYX,
     Projects.SOCIALAPP,
     Projects.CITIZENSAFETY,
@@ -229,8 +230,10 @@ class Data {
   ];
 
   static List<ProjectItemData> projects = [
+     Projects.CONTESTHUNT_APP,
     Projects.ROASTMYRESUME,
-    Projects.AILAAN_APP,
+   
+    // Projects.AILAAN_APP,
     Projects.NOTIFYX,
     Projects.SOCIALAPP,
     Projects.CITIZENSAFETY,
@@ -371,7 +374,30 @@ class Data {
 }
 
 class Projects {
-
+  static ProjectItemData CONTESTHUNT_APP = ProjectItemData(
+    title: StringConst.CONTESTHUNT_APP,
+    subtitle: StringConst.CONTESTHUNT_APP,
+    platform: StringConst.CONTESTHUNT_APP_PLATFORM,
+    primaryColor: AppColors.nimbus,
+    image: ImagePath.CONTESTHUNT_APP_COVER,
+    coverUrl: ImagePath.CONTESTHUNT_APP_SCREENS,
+    navSelectedTitleColor: AppColors.nimbusNavTitle,
+    appLogoColor: AppColors.nimbusSelectedNavTitle,
+    projectAssets: [
+      ImagePath.CONTESTHUNT_APP_1,
+      ImagePath.CONTESTHUNT_APP_2,
+      ImagePath.CONTESTHUNT_APP_3,
+      ImagePath.CONTESTHUNT_APP_4,
+      ImagePath.CONTESTHUNT_APP_5,
+    ],
+    category: StringConst.CONTESTHUNT_APP_CATEGORY,
+    portfolioDescription: StringConst.CONTESTHUNT_APP_DETAIL,
+    isPublic: false,
+    isOnPlayStore: true,
+    technologyUsed: StringConst.FLUTTER,
+    gitHubUrl: StringConst.CONTESTHUNT_APP_GITHUB_URL,
+    playStoreUrl: StringConst.CONTESTHUNT_APP_PLAYSTORE_URL,
+  );
   static ProjectItemData ROASTMYRESUME = ProjectItemData(
   title: StringConst.ROASTMYRESUME,
   subtitle: StringConst.ROASTMYRESUME_SUBTITLE,
@@ -393,7 +419,7 @@ class Projects {
   gitHubUrl: StringConst.ROASTMYRESUME_GITHUB_URL,
   playStoreUrl: StringConst.ROASTMYRESUME_PLAYSTORE_URL,
 );
-
+ 
   static ProjectItemData AILAAN_APP = ProjectItemData(
     title: StringConst.AILAAN_APP,
     subtitle: StringConst.AILAAN_APP,
