@@ -2,7 +2,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "tanay-gupta-portfolio",
   "compatibility_date": "2026-09-15",
-  "assets": {
-    "directory": "./build/web"
-  }
+ "assets": {
+  "directory": "./build/web",
+  "not_found_handling": "single-page-application"
+}
 }
