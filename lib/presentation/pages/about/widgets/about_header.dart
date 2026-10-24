@@ -110,17 +110,10 @@ class AboutDescription extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        //   AnimatedTextSlideBoxTransition(
-        //   controller: controller,
-        //   text: StringConst.ABOUT_DEV_CATCH_LINE,
-        //   width: width,
-        //   maxLines: 2,
-        //   textStyle: style,
-        // ),
-        //  SpaceH8(),
+        // Lines 0 & 1 are one logical thought — no extra height on line 0
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: StringConst.ABOUT_DEV_CATCH_LINE_1,
+          text: AppAbout.headerLines[0],
           width: width,
           maxLines: 2,
           textStyle: style,
@@ -128,16 +121,17 @@ class AboutDescription extends StatelessWidget {
         SpaceH8(),
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: StringConst.ABOUT_DEV_CATCH_LINE_2,
+          text: AppAbout.headerLines[1],
           width: width,
           maxLines: 10,
           heightFactor: 2,
           textStyle: style,
         ),
         SpaceH8(),
+        // Lines 2 & 3 are a second logical thought
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: StringConst.ABOUT_DEV_CATCH_LINE_4,
+          text: AppAbout.headerLines[2],
           width: width,
           maxLines: 10,
           textStyle: style,
@@ -145,7 +139,7 @@ class AboutDescription extends StatelessWidget {
         SpaceH8(),
         AnimatedTextSlideBoxTransition(
           controller: controller,
-          text: StringConst.ABOUT_DEV_CATCH_LINE_5,
+          text: AppAbout.headerLines[3],
           width: width,
           maxLines: 10,
           textStyle: style,

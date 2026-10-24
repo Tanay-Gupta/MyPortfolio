@@ -111,7 +111,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
                   ),
                   Center(
                     child: AnimatedPositionedText(
-                      text: StringConst.WORK_TOGETHER,
+                      text: AppAbout.workTogether,
                       textAlign: TextAlign.center,
                       textStyle: titleStyle,
                       controller: CurvedAnimation(
@@ -125,7 +125,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             ),
             Spacer(),
             AnimatedPositionedText(
-              text: StringConst.AVAILABLE_FOR_FREELANCE,
+              text: AppAbout.availableFor,
               textAlign: TextAlign.center,
               textStyle: subtitleStyle,
               factor: 2.0,
@@ -136,7 +136,7 @@ class _AnimatedFooterState extends State<AnimatedFooter>
             ),
             SpaceH40(),
             AnimatedBubbleButton(
-              title: StringConst.SAY_HELLO.toUpperCase(),
+              title: AppAbout.sayHello.toUpperCase(),
               onTap: () {
                 Navigator.pushNamed(context, ContactPage.contactPageRoute);
               },

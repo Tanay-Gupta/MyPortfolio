@@ -177,32 +177,18 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       controller: _storyController,
                       number: "/01 ",
                       width: contentAreaWidth,
-                      section: StringConst.ABOUT_DEV_STORY.toUpperCase(),
-                      title: StringConst.ABOUT_DEV_STORY_TITLE,
+                      section: AppAbout.storySectionLabel.toUpperCase(),
+                      title: AppAbout.storyTitle,
                       body: Column(
                         children: [
-                          AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 30,
-                            // factor: 1.25,
-                            text: StringConst.ABOUT_DEV_STORY_CONTENT_1,
-                            textStyle: bodyLargeStyle,
-                          ),
-                          AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 30,
-                            text: StringConst.ABOUT_DEV_STORY_CONTENT_2,
-                            textStyle: bodyLargeStyle,
-                          ),
-                          AnimatedPositionedText(
-                            controller: _storySectionAnimation,
-                            width: widthOfBody,
-                            maxLines: 30,
-                            text: StringConst.ABOUT_DEV_STORY_CONTENT_3,
-                            textStyle: bodyLargeStyle,
-                          ),
+                          for (final para in AppAbout.storyParagraphs)
+                            AnimatedPositionedText(
+                              controller: _storySectionAnimation,
+                              width: widthOfBody,
+                              maxLines: 30,
+                              text: para,
+                              textStyle: bodyLargeStyle,
+                            ),
                         ],
                       ),
                     ),
@@ -224,8 +210,8 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       controller: _codingProfileController,
                       number: "/02 ",
                       width: contentAreaWidth,
-                      section: StringConst.ABOUT_DEV_CODING.toUpperCase(),
-                      title: StringConst.ABOUT_DEV_CODING_PROFILE,
+                      section: AppAbout.codingSectionLabel.toUpperCase(),
+                      title: AppAbout.codingSectionTitle,
                       body: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -254,15 +240,15 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       controller: _technologyController,
                       number: "/03 ",
                       width: contentAreaWidth,
-                      section: StringConst.ABOUT_DEV_TECHNOLOGY.toUpperCase(),
-                      title: StringConst.ABOUT_DEV_TECHNOLOGY_TITLE,
+                      section: AppAbout.technologySectionLabel.toUpperCase(),
+                      title: AppAbout.technologyTitle,
                       body: Column(
                         children: [
                           AnimatedPositionedText(
                             controller: _technologySectionAnimation,
                             width: widthOfBody,
                             maxLines: 12,
-                            text: StringConst.ABOUT_DEV_TECHNOLOGY_CONTENT,
+                            text: AppAbout.technologyDescription,
                             textStyle: bodyLargeStyle,
                           ),
                         ],
@@ -301,8 +287,8 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       controller: _contactController,
                       number: "/04 ",
                       width: contentAreaWidth,
-                      section: StringConst.ABOUT_DEV_CONTACT.toUpperCase(),
-                      title: StringConst.ABOUT_DEV_CONTACT_SOCIAL,
+                      section: AppAbout.contactSectionLabel.toUpperCase(),
+                      title: AppAbout.contactSectionSocialTitle,
                       body: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -320,7 +306,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           SpaceH40(),
                           AnimatedTextSlideBoxTransition(
                             controller: _contactController,
-                            text: StringConst.ABOUT_DEV_CONTACT_EMAIL,
+                            text: AppAbout.contactSectionEmailTitle,
                             textStyle: titleStyle,
                           ),
                           SpaceH40(),
@@ -352,7 +338,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                       children: [
                         AnimatedTextSlideBoxTransition(
                           controller: _quoteController,
-                          text: StringConst.FAMOUS_QUOTE,
+                          text: AppAbout.quote,
                           maxLines: 5,
                           width: contentAreaWidth,
                           textAlign: TextAlign.center,
@@ -371,7 +357,7 @@ class _AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           alignment: Alignment.centerRight,
                           child: AnimatedTextSlideBoxTransition(
                             controller: _quoteController,
-                            text: "— ${StringConst.FAMOUS_QUOTE_AUTHOR}",
+                            text: "— ${AppAbout.quoteAuthor}",
                             textStyle: textTheme.bodyLarge?.copyWith(
                               fontSize: responsiveSize(
                                 context,

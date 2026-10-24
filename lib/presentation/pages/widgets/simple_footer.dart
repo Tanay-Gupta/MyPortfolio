@@ -179,7 +179,7 @@ class BuiltWithFlutter extends StatelessWidget {
           " with ",
           style: style,
         ),
-        Icon(
+        FaIcon(
           FontAwesomeIcons.solidHeart,
           size: 14,
           color: AppColors.errorRed,

@@ -7,7 +7,6 @@ import 'package:tanay_gupta_portfolio/presentation/widgets/page_wrapper.dart';
 import 'package:tanay_gupta_portfolio/presentation/widgets/spaces.dart';
 import 'package:tanay_gupta_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
 class AppDrawer extends StatefulWidget {
   AppDrawer({
@@ -111,7 +110,7 @@ class _AppDrawerState extends State<AppDrawer>
                                 Navigator.pop(context);
                               },
                           child: Icon(
-                            FeatherIcons.x,
+                            Icons.close,
                             size: Sizes.ICON_SIZE_30,
                             color: AppColors.accentColor,
                           ),

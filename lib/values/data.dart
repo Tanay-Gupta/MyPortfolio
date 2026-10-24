@@ -132,34 +132,13 @@ class Data {
     // ),
   ];
 
-  static List<String> mobileTechnologies = [
-    "Java",
-    "Python",
-    "Dart",
-    "JavaScript",
-    "C++",
-    "SQL",
-    "Golang"
-  ];
-  // static List<String> programmingLanguages = ["Java", "Python", "C++", "Dart"];
+  /// Programming languages — edit AppAbout.languages in about.dart.
+  static List<String> get mobileTechnologies => AppAbout.languages;
 
-  static List<String> otherTechnologies = [
-    "Flutter",
-    "React.js",
-    "Spring Boot",
-    "GraphQL",
-    "MongoDB",
-    "Redis",
-    "Flask",
-    "Retool",
-    "HTML",
-    "CSS",
-    "TensorFlow", // AI/ML framework
-    "PyTorch", // AI/ML framework
-    "scikit-learn", // Machine learning library
-    "Pandas", // Data manipulation library
-    "NumPy" // Numerical computing library
-  ];
+  /// Frameworks & tools — edit AppAbout.frameworks in about.dart.
+  static List<String> get otherTechnologies => AppAbout.frameworks;
+
+  // socialData1 kept for any remaining references (GitHub + LinkedIn nav bar area)
   static List<SocialData> socialData1 = [
     SocialData(
       name: StringConst.GITHUB,
@@ -171,89 +150,22 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    // SocialData(
-    //   name: StringConst.TWITTER,
-    //   iconData: FontAwesomeIcons.twitter,
-    //   url: StringConst.TWITTER_URL,
-    // ),
   ];
 
-  static List<SocialData> socialData2 = [
-    SocialData(
-      name: StringConst.LINKED_IN,
-      iconData: FontAwesomeIcons.linkedin,
-      url: StringConst.LINKED_IN_URL,
-    ),
-    // SocialData(
-    //   name: StringConst.TWITTER,
-    //   iconData: FontAwesomeIcons.twitter,
-    //   url: StringConst.TWITTER_URL,
-    // ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    // SocialData(
-    //   name: StringConst.TELEGRAM,
-    //   iconData: FontAwesomeIcons.telegram,
-    //   url: StringConst.TELEGRAM_URL,
-    // ),
-  ];
-  static List<SocialData> socialData3 = [
-    SocialData(
-      name: "Leetcode | tanx4",
-      iconData: FontAwesomeIcons.github,
-      url: "https://leetcode.com/tanx4/",
-    ),
-    SocialData(
-      name: "HackerRank | tanaywhocodes",
-      iconData: FontAwesomeIcons.linkedin,
-      url: "https://hackerrank.com/tanaywhocodes/",
-    ),
-    SocialData(
-      name: "CodeChef | tanaywhocodes",
-      iconData: FontAwesomeIcons.github,
-      url: "https://www.codechef.com/users/tanaywhocodes",
-    ),
-  ];
+  /// About page social links — edit AppAbout.socialLinks in about.dart.
+  static List<SocialData> get socialData2 => AppAbout.socialLinks;
 
-  static List<ProjectItemData> recentWorks = [
-     Projects.CONTESTHUNT_APP,
-   Projects.ROASTMYRESUME,
-    // Projects.AILAAN_APP,
-    Projects.NOTIFYX,
-    Projects.SOCIALAPP,
-    Projects.CITIZENSAFETY,
-    Projects.LAZYSHARE,
-    Projects.DATINGAPP,
-  ];
+  /// About page coding profiles — edit AppAbout.codingProfiles in about.dart.
+  static List<SocialData> get socialData3 => AppAbout.codingProfiles;
 
-  static List<ProjectItemData> projects = [
-     Projects.CONTESTHUNT_APP,
-    Projects.ROASTMYRESUME,
-   
-    // Projects.AILAAN_APP,
-    Projects.NOTIFYX,
-    Projects.SOCIALAPP,
-    Projects.CITIZENSAFETY,
-    Projects.LAZYSHARE,
-    Projects.DATINGAPP,
-  ];
+  /// Delegates to [AppProjects] — edit projects.dart to add/update/reorder.
+  static List<ProjectItemData> get recentWorks => AppProjects.recentWorks;
 
-  static List<NoteWorthyProjectDetails> noteworthyProjects = [
-    NoteWorthyProjectDetails(
-      projectName: StringConst.LEETCODE_SUBMISSIONS,
-      isPublic: true,
-      isOnPlayStore: false,
-      isWeb: true,
-      technologyUsed: StringConst.JAVA,
-      projectDescription: StringConst.LEETCODE_SUBMISSIONS_DETAIL,
-      gitHubUrl: StringConst.LEETCODE_SUBMISSIONS_GITHUB_URL,
-      webUrl: StringConst.LEETCODE_SUBMISSIONS_URL,
-      isLive: true,
-    ),
-  ];
+  /// Delegates to [AppProjects] — edit projects.dart to add/update/reorder.
+  static List<ProjectItemData> get projects => AppProjects.all;
+
+  /// Delegates to [AppProjects] — edit projects.dart to add noteworthy entries.
+  static List<NoteWorthyProjectDetails> get noteworthyProjects => AppProjects.noteworthy;
 
   static List<CertificationData> certificationData = [
     CertificationData(
@@ -300,273 +212,7 @@ class Data {
     ),
   ];
 
-  static List<ExperienceData> experienceData = [
-    ExperienceData(
-      company: StringConst.COMPANY_4,
-      position: StringConst.POSITION_4,
-      companyUrl: StringConst.COMPANY_4_URL,
-      roles: [
-        StringConst.COMPANY_4_ROLE_1,
-        StringConst.COMPANY_4_ROLE_2,
-        StringConst.COMPANY_4_ROLE_3,
-        StringConst.COMPANY_4_ROLE_4,
-      ],
-      location: StringConst.LOCATION_4,
-      duration: StringConst.DURATION_4,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_3,
-      position: StringConst.POSITION_3,
-      companyUrl: StringConst.COMPANY_3_URL,
-      roles: [
-        StringConst.COMPANY_3_ROLE_1,
-        StringConst.COMPANY_3_ROLE_2,
-        StringConst.COMPANY_3_ROLE_3,
-      ],
-      location: StringConst.LOCATION_3,
-      duration: StringConst.DURATION_3,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_2,
-      position: StringConst.POSITION_2,
-      companyUrl: StringConst.COMPANY_2_URL,
-      roles: [
-        StringConst.COMPANY_2_ROLE_1,
-        StringConst.COMPANY_2_ROLE_2,
-      ],
-      location: StringConst.LOCATION_2,
-      duration: StringConst.DURATION_2,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_a1,
-      position: StringConst.POSITION_a1,
-      companyUrl: StringConst.COMPANY_a1_URL,
-      roles: [
-        StringConst.COMPANY_a1_ROLE_1,
-      ],
-      location: StringConst.LOCATION_a1,
-      duration: StringConst.DURATION_a1,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_a2,
-      position: StringConst.POSITION_a2,
-      companyUrl: StringConst.COMPANY_a2_URL,
-      roles: [
-        StringConst.COMPANY_a2_ROLE_1,
-        StringConst.COMPANY_a2_ROLE_2,
-      ],
-      location: StringConst.LOCATION_a2,
-      duration: StringConst.DURATION_a2,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_1,
-      position: StringConst.POSITION_1,
-      companyUrl: StringConst.COMPANY_1_URL,
-      roles: [
-        StringConst.COMPANY_1_ROLE_1,
-        StringConst.COMPANY_1_ROLE_2,
-        StringConst.COMPANY_1_ROLE_3,
-      ],
-      location: StringConst.LOCATION_1,
-      duration: StringConst.DURATION_1,
-    ),
-  ];
+  /// Delegates to [AppExperiences.all] — edit experiences.dart to add/update entries.
+  static List<ExperienceData> get experienceData => AppExperiences.all;
 }
 
-class Projects {
-  static ProjectItemData CONTESTHUNT_APP = ProjectItemData(
-    title: StringConst.CONTESTHUNT_APP,
-    subtitle: StringConst.CONTESTHUNT_APP,
-    platform: StringConst.CONTESTHUNT_APP_PLATFORM,
-    primaryColor: AppColors.nimbus,
-    image: ImagePath.CONTESTHUNT_APP_COVER,
-    coverUrl: ImagePath.CONTESTHUNT_APP_SCREENS,
-    navSelectedTitleColor: AppColors.nimbusNavTitle,
-    appLogoColor: AppColors.nimbusSelectedNavTitle,
-    projectAssets: [
-      ImagePath.CONTESTHUNT_APP_1,
-      ImagePath.CONTESTHUNT_APP_2,
-      ImagePath.CONTESTHUNT_APP_3,
-      ImagePath.CONTESTHUNT_APP_4,
-      ImagePath.CONTESTHUNT_APP_5,
-    ],
-    category: StringConst.CONTESTHUNT_APP_CATEGORY,
-    portfolioDescription: StringConst.CONTESTHUNT_APP_DETAIL,
-    isPublic: false,
-    isOnPlayStore: true,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.CONTESTHUNT_APP_GITHUB_URL,
-    playStoreUrl: StringConst.CONTESTHUNT_APP_PLAYSTORE_URL,
-  );
-  static ProjectItemData ROASTMYRESUME = ProjectItemData(
-  title: StringConst.ROASTMYRESUME,
-  subtitle: StringConst.ROASTMYRESUME_SUBTITLE,
-  platform: StringConst.ROASTMYRESUME_PLATFORM,
-  primaryColor: AppColors.datingcolor, // You can customize this color
-  image: ImagePath.ROASTMYRESUME_COVER,     // Add this to your ImagePath class
-  coverUrl: ImagePath.ROASTMYRESUME_COVER, // Optional, if you have a cover image/screens
-  navSelectedTitleColor: AppColors.datingcolorNavTitle, // Customize as per theme
-  appLogoColor: AppColors.datingcolorNavTitle,
-  projectAssets: [
-    // ImagePath.NOTIFYX_2,
-    //   ImagePath.NOTIFYX_3,
-  ],
-  category: StringConst.ROASTMYRESUME_CATEGORY,
-  portfolioDescription: StringConst.ROASTMYRESUME_DETAIL,
-  isPublic: true,
-  isOnPlayStore: false,
-  technologyUsed: "Python",
-  gitHubUrl: StringConst.ROASTMYRESUME_GITHUB_URL,
-  playStoreUrl: StringConst.ROASTMYRESUME_PLAYSTORE_URL,
-);
- 
-  static ProjectItemData AILAAN_APP = ProjectItemData(
-    title: StringConst.AILAAN_APP,
-    subtitle: StringConst.AILAAN_APP,
-    platform: StringConst.AILAAN_APP_PLATFORM,
-    primaryColor: AppColors.nimbus,
-    image: ImagePath.AILAAN_APP_COVER,
-    coverUrl: ImagePath.AILAAN_APP_SCREENS,
-    navSelectedTitleColor: AppColors.nimbusNavTitle,
-    appLogoColor: AppColors.nimbusSelectedNavTitle,
-    projectAssets: [
-      ImagePath.AILAAN_APP_1,
-      ImagePath.AILAAN_APP_2,
-      ImagePath.AILAAN_APP_3,
-      ImagePath.AILAAN_APP_4,
-      ImagePath.AILAAN_APP_5,
-      ImagePath.AILAAN_APP_6,
-      ImagePath.AILAAN_APP_7,
-    ],
-    category: StringConst.AILAAN_APP_CATEGORY,
-    portfolioDescription: StringConst.AILAAN_APP_DETAIL,
-    isPublic: false,
-    isOnPlayStore: true,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.AILAAN_APP_GITHUB_URL,
-    playStoreUrl: StringConst.AILAAN_APP_PLAYSTORE_URL,
-  );
-
-  static ProjectItemData NOTIFYX = ProjectItemData(
-    title: StringConst.NOTIFYX,
-    subtitle: StringConst.NOTIFYX,
-    platform: StringConst.NOTIFYX_PLATFORM,
-    primaryColor: AppColors.notifyxcolor,
-    image: ImagePath.NOTIFYX_COVER,
-    coverUrl: ImagePath.NOTIFYX_SCREENS,
-    navSelectedTitleColor: AppColors.notifyxSelectedNavTitle,
-    appLogoColor: AppColors.notifyxSelectedNavTitle,
-    projectAssets: [
-      // ImagePath.NOTIFYX_1,
-      ImagePath.NOTIFYX_2,
-      ImagePath.NOTIFYX_3,
-      ImagePath.NOTIFYX_4,
-      ImagePath.NOTIFYX_5,
-      ImagePath.NOTIFYX_6,
-      ImagePath.NOTIFYX_7,
-      ImagePath.NOTIFYX_8,
-      ImagePath.NOTIFYX_9,
-    ],
-    category: StringConst.NOTIFYX_CATEGORY,
-    portfolioDescription: StringConst.NOTIFYX_DETAIL,
-    isPublic: true,
-    isOnPlayStore: false,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.NOTIFYX_GITHUB_URL,
-    playStoreUrl: StringConst.NOTIFYX_PLAYSTORE_URL,
-  );
-
-  static ProjectItemData LAZYSHARE = ProjectItemData(
-    title: StringConst.LAZYSHARE,
-    subtitle: StringConst.LAZYSHARE,
-    platform: StringConst.LAZYSHARE_PLATFORM,
-    primaryColor: AppColors.notifyxcolor,
-    image: ImagePath.LAZYSHARE_COVER,
-    coverUrl: ImagePath.LAZYSHARE_SCREENS,
-    navSelectedTitleColor: AppColors.notifyxSelectedNavTitle,
-    appLogoColor: AppColors.notifyxSelectedNavTitle,
-    projectAssets: [
-      // ImagePath.LAZYSHARE_1,
-      ImagePath.LAZYSHARE_2,
-      ImagePath.LAZYSHARE_3,
-      ImagePath.LAZYSHARE_4,
-      ImagePath.LAZYSHARE_5,
-      ImagePath.LAZYSHARE_6,
-      ImagePath.LAZYSHARE_7,
-    ],
-    category: StringConst.LAZYSHARE_CATEGORY,
-    portfolioDescription: StringConst.LAZYSHARE_DETAIL,
-    isPublic: true,
-    isOnPlayStore: true,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.LAZYSHARE_GITHUB_URL,
-    playStoreUrl: StringConst.LAZYSHARE_PLAYSTORE_URL,
-  );
-
-  static ProjectItemData SOCIALAPP = ProjectItemData(
-    title: StringConst.SOCIALAPP,
-    subtitle: StringConst.SOCIALAPP,
-    platform: StringConst.SOCIALAPP_PLATFORM,
-    primaryColor: AppColors.socialappcolor,
-    image: ImagePath.SOCIALAPP_COVER,
-    coverUrl: ImagePath.SOCIALAPP_SCREENS,
-    navSelectedTitleColor: AppColors.socialappcolor,
-    appLogoColor: AppColors.socialappcolor,
-    projectAssets: [
-      // ImagePath.SOCIALAPP_1,
-      ImagePath.SOCIALAPP_2,
-      ImagePath.SOCIALAPP_3,
-      ImagePath.SOCIALAPP_4,
-    ],
-    category: StringConst.SOCIALAPP_CATEGORY,
-    portfolioDescription: StringConst.SOCIALAPP_DETAIL,
-    isPublic: true,
-    isOnPlayStore: false,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.SOCIALAPP_GITHUB_URL,
-    playStoreUrl: StringConst.SOCIALAPP_PLAYSTORE_URL,
-  );
-
-  static ProjectItemData CITIZENSAFETY = ProjectItemData(
-    title: StringConst.CITIZENSAFETY,
-    subtitle: StringConst.CITIZENSAFETY,
-    platform: StringConst.CITIZENSAFETY_PLATFORM,
-    primaryColor: AppColors.citizencolor,
-    image: ImagePath.CITIZENSAFETY_COVER,
-    coverUrl: ImagePath.CITIZENSAFETY_SCREENS,
-    navSelectedTitleColor: AppColors.citizenNavTitle,
-    appLogoColor: AppColors.citizenSelectedNavTitle,
-    projectAssets: [
-      // ImagePath.CITIZENSAFETY_1,
-    ],
-    category: StringConst.CITIZENSAFETY_CATEGORY,
-    portfolioDescription: StringConst.CITIZENSAFETY_DETAIL,
-    isPublic: true,
-    isOnPlayStore: false,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.CITIZENSAFETY_GITHUB_URL,
-    playStoreUrl: StringConst.CITIZENSAFETY_PLAYSTORE_URL,
-  );
-
-  static ProjectItemData DATINGAPP = ProjectItemData(
-    title: StringConst.DATINGAPP,
-    subtitle: StringConst.DATINGAPP,
-    platform: StringConst.DATINGAPP_PLATFORM,
-    primaryColor: AppColors.datingcolor,
-    image: ImagePath.DATINGAPP_COVER,
-    coverUrl: ImagePath.DATINGAPP_SCREENS,
-    navSelectedTitleColor: AppColors.datingcolorNavTitle,
-    appLogoColor: AppColors.datingcolorNavTitle,
-    projectAssets: [
-      // ImagePath.DATINGAPP_1,
-      ImagePath.DATINGAPP_2,
-    ],
-    category: StringConst.DATINGAPP_CATEGORY,
-    portfolioDescription: StringConst.DATINGAPP_DETAIL,
-    isPublic: true,
-    isOnPlayStore: false,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.DATINGAPP_GITHUB_URL,
-    playStoreUrl: StringConst.DATINGAPP_PLAYSTORE_URL,
-  );
-}

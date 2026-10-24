@@ -28,7 +28,7 @@ class AeriumButton extends StatefulWidget {
 
   final String title;
   final TextStyle? titleStyle;
-  final IconData iconData;
+  final FaIconData iconData;
   final double iconSize;
   final Color iconColor;
   final Color buttonColor;
@@ -98,13 +98,11 @@ class _AeriumButtonState extends State<AeriumButton>
     final ButtonStyle defaultButtonStyle = ElevatedButton.styleFrom(
       foregroundColor: widget.onHoverColor,
       backgroundColor: widget.onHoverColor,
+      elevation: 0,
+      shadowColor: Colors.transparent,
       padding: EdgeInsets.all(0),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(0)),
-        side: BorderSide(
-          width: 1,
-          color: widget.borderColor,
-        ),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
       ),
     );
     return MouseRegion(
@@ -113,6 +111,12 @@ class _AeriumButtonState extends State<AeriumButton>
       child: Container(
         width: widget.width,
         height: widget.height,
+        decoration: BoxDecoration(
+          border: Border.all(
+            width: widget.borderWidth,
+            color: widget.borderColor,
+          ),
+        ),
         child: ElevatedButton(
           onPressed: widget.onPressed,
           style: widget.buttonStyle ?? defaultButtonStyle,
@@ -175,7 +179,7 @@ class _AeriumButtonState extends State<AeriumButton>
                     color: _textAndIconColor.value,
                     size: 16.0,
                   )
-                : Icon(
+                : FaIcon(
                     widget.iconData,
                     size: widget.iconSize,
                     color: _textAndIconColor.value,

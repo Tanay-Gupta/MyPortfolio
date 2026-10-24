@@ -8,7 +8,6 @@ import 'package:tanay_gupta_portfolio/presentation/widgets/nav_item.dart';
 import 'package:tanay_gupta_portfolio/presentation/widgets/spaces.dart';
 import 'package:tanay_gupta_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class NavBar extends StatelessWidget {
@@ -69,7 +68,7 @@ class NavBar extends StatelessWidget {
           InkWell(
             onTap: onMenuTap,
             child: Icon(
-              FeatherIcons.menu,
+              Icons.menu,
               size: Sizes.TEXT_SIZE_30,
               color: appLogoColor,
             ),

@@ -17,5 +17,8 @@ part 'styles.dart';
 part 'gradients.dart';
 part 'decoration.dart';
 part 'data.dart';
+part 'about.dart';
+part 'experiences.dart';
+part 'projects.dart';
 part 'docs.dart';
 part 'animations.dart';

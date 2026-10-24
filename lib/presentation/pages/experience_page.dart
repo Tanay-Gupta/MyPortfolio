@@ -22,65 +22,34 @@ class ExperiencePage extends StatefulWidget {
 
 class _ExperiencePageState extends State<ExperiencePage>
     with TickerProviderStateMixin {
-  late AnimationController _controller;
-  late AnimationController _experience1Controller;
-  late AnimationController _experience2Controller;
-  late AnimationController _experience3Controller;
-  late AnimationController _experience4Controller;
-  late AnimationController _experience5Controller;
-  late AnimationController _experience6Controller;
-  late List<AnimationController> _experienceControllers;
+  late AnimationController _navController;
+
+  /// One controller per experience entry — sized automatically from the data
+  /// list, so adding a new job in experiences.dart requires no changes here.
+  late List<AnimationController> _itemControllers;
 
   @override
   void initState() {
-    _controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience1Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience2Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience3Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience4Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience5Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experience6Controller = AnimationController(
-      duration: const Duration(milliseconds: 1200),
-      vsync: this,
-    );
-    _experienceControllers = [
-      _experience1Controller,
-      _experience2Controller,
-      _experience3Controller,
-      _experience4Controller,
-      _experience5Controller,
-      _experience6Controller,
-    ];
     super.initState();
+    _navController = AnimationController(
+      duration: const Duration(milliseconds: 1200),
+      vsync: this,
+    );
+    _itemControllers = List.generate(
+      AppExperiences.all.length,
+      (_) => AnimationController(
+        duration: const Duration(milliseconds: 1200),
+        vsync: this,
+      ),
+    );
   }
 
   @override
   void dispose() {
-    _controller.dispose();
-    _experience1Controller.dispose();
-    _experience2Controller.dispose();
-    _experience3Controller.dispose();
-    _experience4Controller.dispose();
-    _experience5Controller.dispose();
-    _experience6Controller.dispose();
+    _navController.dispose();
+    for (final c in _itemControllers) {
+      c.dispose();
+    }
     super.dispose();
   }
 
@@ -113,9 +82,9 @@ class _ExperiencePageState extends State<ExperiencePage>
     return PageWrapper(
       selectedRoute: ExperiencePage.experiencePageRoute,
       selectedPageName: StringConst.EXPERIENCE,
-      navBarAnimationController: _controller,
+      navBarAnimationController: _navController,
       onLoadingAnimationDone: () {
-        _controller.forward();
+        _navController.forward();
       },
       child: ListView(
         padding: EdgeInsets.zero,
@@ -125,7 +94,7 @@ class _ExperiencePageState extends State<ExperiencePage>
         children: [
           PageHeader(
             headingText: StringConst.EXPERIENCE,
-            headingTextController: _controller,
+            headingTextController: _navController,
           ),
           Padding(
             padding: padding,
@@ -134,7 +103,7 @@ class _ExperiencePageState extends State<ExperiencePage>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: _buildExperienceSection(
-                  data: Data.experienceData,
+                  data: AppExperiences.all,
                   width: contentAreaWidth,
                 ),
               ),
@@ -151,7 +120,7 @@ class _ExperiencePageState extends State<ExperiencePage>
     required double width,
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? defaultTitleStyle = textTheme.titleMedium?.copyWith(
+    final TextStyle? defaultTitleStyle = textTheme.titleMedium?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -160,20 +129,20 @@ class _ExperiencePageState extends State<ExperiencePage>
       ),
     );
 
-    List<Widget> items = [];
+    final List<Widget> items = [];
 
     for (int index = 0; index < data.length; index++) {
+      final controller = _itemControllers[index];
       items.add(
         VisibilityDetector(
           key: Key('experience-section-$index'),
-          onVisibilityChanged: (visibilityInfo) {
-            double visiblePercentage = visibilityInfo.visibleFraction * 100;
-            if (visiblePercentage > 40) {
-              _experienceControllers[index].forward();
+          onVisibilityChanged: (info) {
+            if (info.visibleFraction * 100 > 40) {
+              controller.forward();
             }
           },
           child: ContentBuilder(
-            controller: _experienceControllers[index],
+            controller: controller,
             number: "/0${index + 1}",
             width: width,
             section: data[index].duration.toUpperCase(),
@@ -181,13 +150,13 @@ class _ExperiencePageState extends State<ExperiencePage>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 AnimatedTextSlideBoxTransition(
-                  controller: _experienceControllers[index],
+                  controller: controller,
                   text: data[index].company,
                   textStyle: defaultTitleStyle,
                 ),
                 SpaceH16(),
                 AnimatedTextSlideBoxTransition(
-                  controller: _experienceControllers[index],
+                  controller: controller,
                   text: data[index].position,
                   textStyle: defaultTitleStyle?.copyWith(
                     fontSize: responsiveSize(
@@ -204,16 +173,14 @@ class _ExperiencePageState extends State<ExperiencePage>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: _buildRoles(
                 roles: data[index].roles,
-                controller: _experienceControllers[index],
+                controller: controller,
                 width: width * 0.75,
               ),
             ),
           ),
         ),
       );
-      items.add(
-        CustomSpacer(heightFactor: 0.1),
-      );
+      items.add(CustomSpacer(heightFactor: 0.1));
     }
 
     return items;
@@ -226,28 +193,19 @@ class _ExperiencePageState extends State<ExperiencePage>
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
     final TextStyle? bodyLargeStyle = textTheme.bodyLarge?.copyWith(
-      fontSize: responsiveSize(
-        context,
-        Sizes.TEXT_SIZE_16,
-        17,
-      ),
+      fontSize: responsiveSize(context, Sizes.TEXT_SIZE_16, 17),
       color: AppColors.grey750,
       fontWeight: FontWeight.w300,
       height: 1.5,
-      // letterSpacing: 2,
     );
 
-    List<Widget> items = [];
+    final List<Widget> items = [];
     for (int index = 0; index < roles.length; index++) {
       items.add(
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.play_arrow_outlined,
-              color: AppColors.black,
-              size: 12,
-            ),
+            Icon(Icons.play_arrow_outlined, color: AppColors.black, size: 12),
             SpaceW8(),
             Flexible(
               child: AnimatedPositionedText(
@@ -257,14 +215,13 @@ class _ExperiencePageState extends State<ExperiencePage>
                 width: width,
                 controller: CurvedAnimation(
                   parent: controller,
-                  curve: Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
+                  curve: const Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
                 ),
               ),
             ),
           ],
         ),
       );
-
       items.add(SpaceH12());
     }
 

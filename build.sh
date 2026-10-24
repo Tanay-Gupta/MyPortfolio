@@ -2,9 +2,9 @@
 
 set -e
 
-echo "Installing Flutter 3.24.5..."
+echo "Installing Flutter 3.47.7..."
 
-curl -L https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.5-stable.tar.xz -o flutter.tar.xz
+curl -L https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.47.7-stable.tar.xz -o flutter.tar.xz
 
 tar xf flutter.tar.xz
 

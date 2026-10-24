@@ -38,7 +38,7 @@ class TechnologySection extends StatelessWidget {
                 AnimatedTextSlideBoxTransition(
                   controller: controller,
                   width: screenWidth,
-                  text: StringConst.MOBILE_TECH,
+                  text: AppAbout.languagesSectionTitle,
                   textStyle: titleStyle,
                 ),
                 SpaceH20(),
@@ -56,7 +56,7 @@ class TechnologySection extends StatelessWidget {
                 AnimatedTextSlideBoxTransition(
                   controller: controller,
                   width: screenWidth,
-                  text: StringConst.OTHER_TECH,
+                  text: AppAbout.frameworksSectionTitle,
                   textStyle: titleStyle,
                 ),
                 SpaceH20(),
@@ -85,7 +85,7 @@ class TechnologySection extends StatelessWidget {
                       AnimatedTextSlideBoxTransition(
                         controller: controller,
                         width: width * 0.25,
-                        text: StringConst.MOBILE_TECH,
+                        text: AppAbout.languagesSectionTitle,
                         textStyle: titleStyle,
                       ),
                       SpaceH20(),
@@ -111,7 +111,7 @@ class TechnologySection extends StatelessWidget {
                         AnimatedTextSlideBoxTransition(
                           controller: controller,
                           width: (width * 0.75),
-                          text: StringConst.OTHER_TECH,
+                          text: AppAbout.frameworksSectionTitle,
                           textStyle: titleStyle,
                         ),
                         SpaceH20(),

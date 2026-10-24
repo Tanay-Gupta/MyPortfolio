@@ -2,9 +2,10 @@ import 'package:tanay_gupta_portfolio/core/utils/functions.dart';
 import 'package:tanay_gupta_portfolio/presentation/widgets/spaces.dart';
 import 'package:tanay_gupta_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SocialData {
-  final IconData iconData;
+  final FaIconData iconData;
   final String url;
   final String name;
   final Color? color;
@@ -58,7 +59,7 @@ class Socials extends StatelessWidget {
       items.add(
         InkWell(
           onTap: () => Functions.launchUrl(socialData[index].url),
-          child: Icon(
+          child: FaIcon(
             socialData[index].iconData,
             color: socialData[index].color ?? color,
             size: size,
